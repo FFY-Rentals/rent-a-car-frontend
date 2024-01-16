@@ -13,11 +13,13 @@ function App() : ReactElement{
   return (
     <>
     <Navbar />
+      <div className='mb-5' style={{minHeight: "100vh"}}>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={< About/>} />
         <Route path="/cars" element={<Cars />} />
       </Routes>
+      </div>
       <CustomFooter />
     </>
   );
